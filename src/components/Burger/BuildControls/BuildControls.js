@@ -6,7 +6,7 @@ import BuildControl from './BuildControl/BuildControl';
 
 
 const controls = [
-{ label: 'Lettuce', type: 'salad' },
+{ label: 'Lettuce', type: 'lettuce' },
 { label: 'Bacon', type: 'bacon' },
 { label: 'Cheese', type: 'cheese' },
 { label: 'Meat', type: 'meat' },
@@ -28,7 +28,8 @@ const buildControls = (props) => (
 
         <button 
         className={classes.OrderButton}
-        disabled={!props.purchasable}> Place Order 
+        disabled={!props.purchasable}
+        onClick={props.ordered}> Confirm Order
         
         </button>
 
